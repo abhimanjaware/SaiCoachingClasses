@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Users, BookOpen, Award, Target, TrendingUp, Star, Trophy, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -238,9 +239,13 @@ const Stats = () => {
             <p className="text-blue-100 text-lg mb-6 max-w-2xl mx-auto">
               Be part of our growing community of successful students and achieve your dreams with expert guidance.
             </p>
+            
+            <Link to="/contact">
             <button className="bg-white text-blue-600 font-bold px-8 py-3 rounded-full hover:bg-gray-50 transition-colors duration-200 shadow-lg hover:shadow-xl">
               Get Started Today
             </button>
+            </Link>
+
           </div>
         </div>
       </div>
